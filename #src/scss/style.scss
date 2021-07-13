@@ -122,6 +122,8 @@ body {
     // .slider-main__body
 
     &__body {
+        position: relative;
+        z-index: 2;
     }
 
     // .slider-main__slide
@@ -139,8 +141,6 @@ body {
     // .slider-main__content
 
     &__content {
-        position: relative;
-        z-index: 2;
     }
 
     // .slider-main__title
