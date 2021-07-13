@@ -10,7 +10,7 @@
     &__body {
         padding: 25px 0px;
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
         margin: 0px -35px;
     }
 
@@ -73,11 +73,20 @@
     // .header-body__button
 
     &__button {
+        font-size: 14px;
+        line-height: 15px;
+        color: $mainColor;
+        margin: 0px 0px 10px 0px;
     }
 
     // .header-body__link
 
     &__link {
+        font-size: 12px;
+        line-height: 13px;
+        text-decoration-line: underline;
+        text-align: center;
+        color: $linkColor;
     }
 }
 
@@ -147,7 +156,7 @@
     &__link {
         font-size: 16px;
         line-height: 18px;
-        color: #7c7c7c;
+        color: $linkColor;
         position: relative;
         padding: 0px 12px 0px 0px;
         &::after {
@@ -183,11 +192,6 @@
         a {
             color: $mainColor;
         }
-    }
-
-    // .contacts__email
-
-    &__email {
     }
 }
 .worktime-list {
@@ -225,6 +229,9 @@
 }
 
 .menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     // .menu__icon
 
     &__icon {
@@ -238,32 +245,60 @@
     // .menu__list
 
     &__list {
+        display: flex;
+        margin: 0px -26px;
     }
 
     // .menu__item
 
     &__item {
+        padding: 0px 26px;
     }
 
     // .menu__link
 
     &__link {
+        font-size: 16px;
+        line-height: 18px;
+        color: $mainColor;
+        display: inline-block;
+        &::after {
+            content: "";
+            display: block;
+            border-bottom: 1px solid $mainColor;
+            transform: scaleX(0);
+            transition: transform 0.25s ease-in-out;
+        }
+        &:hover::after {
+            //border-bottom: 1px solid $mainColor;
+            transform: scaleX(1);
+        }
     }
 }
 .header-menu {
     // .header-menu__logo
 
     &__logo {
+        display: flex;
+        align-items: center;
     }
 
     // .header-menu__logoimg
 
     &__logoimg {
+        margin: 0px 11px 0px 0px;
+        img {
+            height: 30px;
+            width: 20px;
+        }
     }
 
     // .header-menu__logotext
 
     &__logotext {
+        font-size: 22px;
+        line-height: 100%;
+        text-align: center;
     }
 }
 .icon-menu {
