@@ -89,13 +89,86 @@ body {
 @import "popup";
 @import "header";
 @import "footer";
-@import "home";
 //</ПОДКЛЮЧЕНИЕ ФАЙЛОВ СТИЛЕЙ СТРАНИЦ И ЭЛЕМЕНТОВ>====================================================================================================
 
 //<ОСНОВНОЙ БЛОК>====================================================================================================
 .page {
     flex: 1 1 auto;
+    // .page__main-slider
+
+    &__main-slider {
+    }
 }
 //===================================================================================================================================
+
+.main-slider {
+    // .main-slider__container
+
+    &__container {
+    }
+
+    // .main-slider__body
+
+    &__body {
+        height: 592px;
+    }
+
+    // .main-slider__slider
+
+    &__slider {
+    }
+}
+.slider-main {
+    // .slider-main__body
+
+    &__body {
+    }
+
+    // .slider-main__slide
+
+    &__slide {
+    }
+
+    // .slider-main__image
+
+    &__image {
+        padding: 0px 0px 50% 0px;
+        max-height: 592px;
+    }
+
+    // .slider-main__content
+
+    &__content {
+        position: relative;
+        z-index: 2;
+    }
+
+    // .slider-main__title
+
+    &__title {
+    }
+
+    // .slider-main__text
+
+    &__text {
+    }
+
+    // .slider-main__button
+
+    &__button {
+    }
+
+    // .slider-main__controls
+
+    &__controls {
+    }
+}
+
+.controls-slider-main {
+    // .controls-slider-main__dots
+
+    &__dots {
+    }
+}
 
 //</ОСНОВНОЙ БЛОК>====================================================================================================
